@@ -15,7 +15,8 @@ body {
     display: flex;
     flex-direction: column;
     /* generic project style */
-    color: #3a3a3a;
+    color: #ffffff;
+
 }
 
 h2,
@@ -47,7 +48,10 @@ h1 {
     letter-spacing: 4px;
     font-size: 110%;
 }
-
+#menu > li {
+    margin-bottom: 1em;
+}
+/* Navbar styles with dropdown toggle */
 nav {
     position: relative;
     background-color: rgba(9, 76, 91, 0.2);
@@ -71,9 +75,9 @@ nav {
 .nav-toggle-label {
     font-size: 2rem;
 }
-
+/* Main Content */ 
 main {
-    background-color: #3a3a3a;
+    background-color: #ffffff;
     /* make footer pushed down */
     flex: 1 0 auto;
     /* Add margin at the top to prevent content from being covered by the header */
@@ -83,20 +87,15 @@ main {
     flex-direction: column;
 }
 
-#harbour {
-    height: 300px;
-    width: 50%;
-    background: url("../images/Stavsnas-vinterhamn-2.jpg") no-repeat center center/cover;
-    position: relative;
-}
+
 #trail {
     height: 300px;
-    width: 50%;
+    width: 100%;
     background: url("../images/8E5124E7-13D1-4AFE-AB89-F0C50380C5EF_1_105_c.jpeg") no-repeat center center/cover;
-    position: relative;
+    position: absolute;
 }
 
-#cover-text {
+#trail-text {
     /* The final rgba value sets the opasity to semi-transparent */
     background-color: rgba(9, 76, 91, 0.2);
     font-size: 130%;
@@ -106,6 +105,34 @@ main {
     min-height: 200px;
     padding-top: 40px;
     padding-left: 10px;
+
+}
+
+/* Reasons section */
+#reasons {
+    width: 90%;
+    margin: 20px auto;
+}
+
+#reasons h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 280%;
+}
+
+#benefits-physical>div,
+#benefits-mental>div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#benefits p {
+    padding: 0 20px;
+}
+
+#benefits hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
 }
 
 footer {
@@ -113,10 +140,11 @@ footer {
 }
 
 #logo {
-    font-size: 400%;
+    font-size: 285%;
     line-height: 75px;
     margin: 0 0.5rem;
-    color: bisque;
+    color: rgb(255, 228, 196);
     background-color: rgba(9, 76, 91, 0.2);
+    text-decoration: none;
 
 }
