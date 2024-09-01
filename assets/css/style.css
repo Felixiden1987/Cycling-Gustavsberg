@@ -1,0 +1,18 @@
+/* google fonts import */ 
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+/* General style rules */
+body {
+    font-family: "Bad Script", sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Bad Script", cursive, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  #logo {
+    font-size: 280%;
+    line-height: 75px; 
+    margin: 0 0.5rem; 
+  }
