@@ -1,4 +1,4 @@
-/* google fonts import */ 
+/* google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 
 /* Asterisc Wildcard selector to override default styles added by the browser */
@@ -7,9 +7,10 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 /* General style rules */
 body {
-    font-family: "Bad Script";
+    font-family: "Bad Script", cursive;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -17,49 +18,105 @@ body {
     color: #3a3a3a;
 }
 
-h2, h3 {
+h2,
+h3 {
     font-family: "Bad Script", cursive;
     font-weight: 400;
     font-style: normal;
     color: bisque;
-    
-  }
-header {
-    background-color: rgb(255, 119, 0);
+
 }
+
+header {
+    background-color: rgba(9, 76, 91, 0.2);
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px bisque;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+h1 {
+    font-family: "Bad Script", cursive, sans-serif;
+}
+
+#menu {
+    letter-spacing: 4px;
+    font-size: 110%;
+}
+
+nav {
+    position: relative;
+    background-color: rgba(9, 76, 91, 0.2);
+    width: 100%;
+    left: 0;
+    box-shadow: 0 2px 2px bisque;
+    padding: 0 1rem;
+    display: block;
+    top: 100%;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
 main {
     background-color: #3a3a3a;
     /* make footer pushed down */
     flex: 1 0 auto;
-     /* Add margin at the top to prevent content from being covered by the header */
-     margin-top: 47px;
-     /* Enable flex properties for child elements */
-     display: flex;
-     flex-direction: column;
+    /* Add margin at the top to prevent content from being covered by the header */
+    margin-top: 47px;
+    /* Enable flex properties for child elements */
+    display: flex;
+    flex-direction: column;
 }
+
 #harbour {
-    height: 600px;
-    width: 100%; 
+    height: 300px;
+    width: 50%;
     background: url("../images/Stavsnas-vinterhamn-2.jpg") no-repeat center center/cover;
-    position: relative;    
-    } 
+    position: relative;
+}
+#trail {
+    height: 300px;
+    width: 50%;
+    background: url("../images/8E5124E7-13D1-4AFE-AB89-F0C50380C5EF_1_105_c.jpeg") no-repeat center center/cover;
+    position: relative;
+}
+
 #cover-text {
-        /* The final rgba value sets the opasity to semi-transparent */
-        background-color:rgba(9, 76, 91, 0.2);
-        font-size: 130%;
-        position: absolute;
-        bottom: 30px;
-        width: 80%;
-        min-height: 200px;
-        padding-top: 40px; 
-        padding-left: 10px;
-    }
+    /* The final rgba value sets the opasity to semi-transparent */
+    background-color: rgba(9, 76, 91, 0.2);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+}
+
 footer {
-    background-color: rgb(255, 119, 0);
+    background-color: rgb(9, 76, 91);
 }
 
 #logo {
     font-size: 400%;
-    line-height: 75px; 
-    margin: 0 0.5rem; 
-  }
+    line-height: 75px;
+    margin: 0 0.5rem;
+    color: bisque;
+    background-color: rgba(9, 76, 91, 0.2);
+
+}
